@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     ## APPS in project
+    'research',
 
     ## Installed Apps
     'rest_framework',
