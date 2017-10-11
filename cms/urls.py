@@ -21,6 +21,7 @@ from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token, verify
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^research/', include('research.urls', namespace='research')),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api-auth/token/?', obtain_jwt_token),
     url(r'^api-auth/refresh/?', refresh_jwt_token),
